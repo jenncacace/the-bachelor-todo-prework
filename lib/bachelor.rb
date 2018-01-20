@@ -43,7 +43,7 @@ counter = 0
 sum_of_ages = 0 
   data[season].each do|contestant_hash|
     counter += 1 
-    sum_of_ages += contestant_hash["age"].to_i
+    sum_of_ages += contestant_hash["age"].to_f
   end
-   average_age = (sum_of_ages / counter.to_f).round 
+   average_age = (sum_of_ages / counter).round 
 end
