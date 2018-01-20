@@ -51,5 +51,5 @@ sum_of_ages = 0
   end
   average_age = sum_of_ages / counter
     return average_age
-  end 
+  end
 end
