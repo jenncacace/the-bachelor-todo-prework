@@ -47,5 +47,6 @@ sum_of_ages = 0
       sum_of_ages += contestant_hash["age"].to_f
     end
   end
-  return sum_of_ages / counter  
+  average_age = sum_of_ages / counter
+  return average_age.round
 end
