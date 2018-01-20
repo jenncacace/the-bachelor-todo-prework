@@ -32,6 +32,7 @@ def get_occupation(data, hometown)
   data.each do |season, contestants|
     contestants.each do |contestant_hash|
       
+      
   # code here
 end
 
