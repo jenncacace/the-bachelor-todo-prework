@@ -43,6 +43,7 @@ counter = 0
 sum_of_ages = 0 
   data.each do |season, contestants|
     contestants.each do |contestant_hash|
+      if 
       counter += 1 
       sum_of_ages += contestant_hash["age"].to_f
     end
