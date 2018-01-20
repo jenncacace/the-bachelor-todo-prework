@@ -21,7 +21,7 @@ count_by_hometown = 0
   data.each do |season, contestants|
     contestants.each do |contestant_hash|
       if contestant_hash["hometown"] == hometown
-        count_by_hometown = count_by_hometown + 1 
+        count_by_hometown += 1 
       end
     end
   end
@@ -43,6 +43,9 @@ counter = 0
 sum_of_ages = 0 
   data.each do |season, contestants|
     contestants.each do |contestant_hash|
-      ages_in_season.push( contestant_hash["age"])
-      
+      counter += 1 
+      sum_of_ages += contestant_hash[:age]
+    end
+  end
+  return sum_of_ages / counter  
 end
