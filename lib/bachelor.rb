@@ -41,13 +41,9 @@ end
 def get_average_age_for_season(data, season)
 counter = 0 
 sum_of_ages = 0 
-  data.each do |season, contestants|
-    contestants.each do |contestant_hash|
-      if season = season 
-        counter += 1 
-        sum_of_ages += contestant_hash["age"].to_f
-      end 
-    end
+  data[season].each do|contestant_hash|
+    counter += 1 
+    sum_of_ages += contestant_hash["age"].to_f
   end
   average_age = sum_of_ages / counter
     return average_age
